@@ -65,6 +65,10 @@ text-decoration: none;
 .nav-links a{
     text-decoration: none;
 }
+header{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 .hero{
     display: flex;
     justify-content: space-between;
@@ -102,11 +106,15 @@ color: rgb(255, 255, 255);
 font-size: 20px;
 font-weight: 600;
 }
+.curriculum{
+    background: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    border: 2px solid red;
+}
 .curriculum-content{
 display: flex;
 align-items: center;
 justify-content: center;
-
 }
 .card-color{
     background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
@@ -179,7 +187,7 @@ margin: 52px 115px;
 }
 @media screen and (max-width:1440px){
     .navbar{
-        border: 0.5px solid rgb(254, 163, 1);
+     border: 0.5px solid rgb(254, 163, 1);
     }
     .toggle{
         display: block;
@@ -189,6 +197,23 @@ margin: 52px 115px;
  }
  .hero{
     flex-wrap: wrap-reverse;
+ }
+ .hero-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+ }
+ .curriculum{
+margin-top:800px;
+padding: 40px 0px 40px 0px;
+align-items: center;
+ }
+ .curriculum-content{ 
+
+    flex-direction: column;
+ }
+ .c-card{
+    margin-bottom: 20px;
  }
 
 }
