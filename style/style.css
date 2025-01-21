@@ -180,7 +180,7 @@ margin: 52px 115px;
 @media screen and (max-width:1440px){
     .navbar{
         border: 0.5px solid rgb(254, 163, 1);
-       margin: 0;
+        padding: 15px;
     }
     .toggle{
         display: block;
@@ -188,15 +188,10 @@ margin: 52px 115px;
  .nav-links,.btn-primary{
     display: none;
  }
-.enroll{
-    display: block;
- }
  .hero{
     flex-wrap: wrap-reverse;
  }
-.curriculum{
-    display: none;
-}
+
 }
 
 
