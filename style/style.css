@@ -180,7 +180,6 @@ margin: 52px 115px;
 @media screen and (max-width:1440px){
     .navbar{
         border: 0.5px solid rgb(254, 163, 1);
-        padding: 15px;
     }
     .toggle{
         display: block;
