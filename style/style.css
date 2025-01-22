@@ -1,7 +1,6 @@
 *{
   font-family: "Quicksand", serif;
   font-style: normal;
-  box-sizing: border-box;
   background-color: #F7F7F7;
 }
 .display-flex{
@@ -51,11 +50,15 @@ font-weight: 600;
 .btn-primary a{
 text-decoration: none;
 }
+.bar{
+    font-size:60px;
+    display: none;
+}
 .navbar{
     justify-content: space-between;
     align-items: center;
     padding:20px 0 20px 0;
-    margin:0px 140px;
+    margin:0px auto;
 }
 .nav-links{
     list-style: none;
@@ -73,7 +76,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:0px 140px; 
+    margin:0px auto; 
 }
 .hero-content{
     max-width:640px;
@@ -97,6 +100,7 @@ text-align: left;
     color: rgb(1, 172, 253);
 }
 .enroll{
+width: 300px;
 background: rgb(17, 17, 17);
 border-radius: 12px;
 border: none;
@@ -112,16 +116,16 @@ font-weight: 600;
     background-repeat: no-repeat;
     background-position:center;
     background-size:contain;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .curriculum-content{
-    max-width: 1300px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    max-width: 1220px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
     gap: 30px;
     margin: 0 auto;
-  
 }  
 .card-color{
     background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
@@ -190,14 +194,7 @@ background: none;
 .read-color1{
     color: #8700FF;
 }
-.toggle{
-    font-size: 30px;
-    float: right;
-    line-height: 100px;
-    padding-right:  20PX;
-    display: none;
  
-} 
 .slider{
 display: flex;
 justify-content: center;
@@ -343,22 +340,19 @@ text-transform: capitalize;
     margin-top: -30px;
 }
 .footer{
-max-width: 1440px;
-max-height:600px;
+max-width:1160px;
+height: auto;
 margin: 0 auto;
 background: rgb(1, 172, 253);
 display: flex;
-align-items: center;
-gap: 0;
+justify-content: space-between;
+padding:141px;
 }
 .footer-content{
-    margin: 148px;
     background: transparent;
-    margin-right:35px;
 }
 .footer-list{
     background: transparent;
-    text-align: left;
 }
 .footer-links li{
     list-style: none;
@@ -385,13 +379,10 @@ gap: 0;
 }
 .icons{
 background: transparent;
-margin-left: 50px;
-margin-top: -107px;
 color: rgb(255, 255, 255);
 font-size: 1rem;
 font-weight: 700;
 line-height: 26px;
-margin-left:  100px;
 }
 .icon{
   margin-top: 18px;
@@ -415,8 +406,6 @@ background: transparent;
     font-size: 1.6rem;
     font-weight: 700;
     background: transparent;
-    margin-left: 25px;
-    margin-bottom:30px;
 }
 .Marquee{
     display: flex;
@@ -435,33 +424,53 @@ background: transparent;
     margin-top: 30px;
     padding-bottom: 10px;
 }
-@media screen and (max-width:1440px){
-    .navbar{
+@media screen and (max-width:576px){
+    nav{
      border: 0.5px solid rgb(254, 163, 1);
     }
-    .toggle{
-        display: block;
-     }
  .nav-links,.btn-primary{
     display: none;
+ }
+ .bar{
+    display:block;
  }
  .hero{
     flex-wrap: wrap-reverse;
  }
- .hero-content{
+ .hero-content{  
 display: flex;
 flex-direction: column;
 align-items: center;
  }
- .curriculum-content{ 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+ .hero-title{
+    text-align: center;
  }
- .curriculum-title{ 
-    margin-top:30rem;
+ .hero-details{
+    text-align: center;
+ }
+ .Curriculum{  
+margin-top: 25em;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+ }
+ .curriculum-content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+ }
+.story-title{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ .curriculum-title{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin-top:300px;
  }
  .slider{
     display: none;
@@ -470,7 +479,21 @@ align-items: center;
     display: none;
  }
  
-
+ .story-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+ .footer{
+   display: grid;
+   grid-template-columns: repeat(1,1fr);
+ }
+ .footer-content{
+    margin-bottom:130px;
+ }
+ .footer-details{
+    width: 400px;
+ }
+ 
 }
 
 
