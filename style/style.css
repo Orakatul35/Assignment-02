@@ -14,7 +14,7 @@
 }
  .logo-text{
     color: rgb(17, 17, 17);
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
 
 }
@@ -199,9 +199,8 @@ background: none;
  
 } 
 .slider{
-width: 130px;
-height: 60px;
 display: flex;
+justify-content: center;
 align-items: center;
 margin: 80px 700px;
 gap: 30px;
@@ -213,7 +212,7 @@ gap: 30px;
     width: 64px;
 }
 .story{
-    border: 2px solid red;
+
 max-width: 1440px;
 background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 margin:0 auto
@@ -237,13 +236,38 @@ margin:0 auto
     grid-template-columns: repeat(2,1fr);
 }
 .highlight-story-card{
-width: 540px;
-height: 630px;
+width: 580px;
+height:720px;
 left: 140px;
 right: 759.73px;
 top: 197.5px;
 background: #FFFFFF;
 border-radius: 16px;
+}
+.highlight-story-title{
+color: rgb(0, 0, 0);
+font-size: 1.5rem;
+font-weight: 700;
+padding: 0px 39px;
+}
+.little-story-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.story-description{
+color: rgb(102, 102, 102);
+font-family: Raleway;
+font-size: 1rem;
+font-weight: 500;
+line-height: 28.76px;
+padding: 0px 39px;
+}
+.little-story-title{
+color: rgb(0, 0, 0);
+font-size: 1.3rem;
+font-weight: 700;
+line-height: 28.76px;
+padding: 0px 30px 0px 10px;
 }
 .little-story-card{
     width: 290px;
@@ -252,6 +276,7 @@ border-radius: 16px;
 }
 .highlight-story-image{
     border-radius: 16px 16px 0 0;
+    width: 580px;
 }
 .story-image{
     border-radius: 16px 16px 0 0;
@@ -260,16 +285,51 @@ border-radius: 16px;
     background: transparent;
     gap: 20px;
 }
-.btn-card{
-    /* Background */
+.btn-card1{
+width: 174.51px;
 height: 45px;
-left: 38.35px;
+padding: 15px;
+margin-left: 38.35px;
 right: 327.41px;
-top: 314.14px;
-background: #3CD8E8;
+margin-top: -600px;
 border-radius: 47.9343px;
 border: none;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+font-size:1rem;
+font-weight: 500;
+background: #3CD8E8;
+text-transform: capitalize;
 }
+.btn-card2{
+width: 174.51px;
+height: 38.35px;
+padding: 10px;
+margin-left: 38.35px;
+border-radius: 47.9343px;
+border: none;
+color: rgb(255, 255, 255);
+font-family: Raleway;
+font-size:1rem;
+font-weight: 500;
+background: #95B226;
+text-transform: capitalize;
+}
+.btn-card3{
+    width: 174.51px;
+    height: 38.35px;
+    padding: 10px;
+    margin-left: 38.35px;
+    border-radius: 47.9343px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size:1rem;
+    font-weight: 500;
+    background: #5D58F0;
+    text-transform: capitalize;
+    }
+   
 .view{
     background: transparent;
     display: flex;
@@ -282,10 +342,83 @@ border: none;
 .little-card-content{
     margin-top: -30px;
 }
-/* .story-content1{
-width: 540.27px;
-height: 630.52px;
-} */
+.footer{
+max-width: 1440px;
+max-height:600px;
+margin: 0 auto;
+background: rgb(1, 172, 253);
+display: flex;
+align-items: center;
+gap: 0;
+}
+.footer-content{
+    margin: 148px;
+    background: transparent;
+    margin-right:35px;
+}
+.footer-list{
+    background: transparent;
+    text-align: left;
+}
+.footer-links li{
+    list-style: none;
+    background: transparent; 
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    
+}
+.footer-text{
+    color: rgb(255,255,255);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top:-80px;
+    margin-left: 80px;
+    background: transparent;
+}
+.footer-img{
+    background: transparent;
+}
+.footer-links{
+   background: transparent;
+}
+.icons{
+background: transparent;
+margin-left: 50px;
+margin-top: -107px;
+color: rgb(255, 255, 255);
+font-size: 1rem;
+font-weight: 700;
+line-height: 26px;
+margin-left:  100px;
+}
+.icon{
+  margin-top: 18px;
+  margin-right: 5px;
+}
+.touch{
+   background: transparent;
+   font-size: 1.6rem;
+}
+.footer-details{
+width: 550px;
+height: 100px;
+color: rgb(255, 255, 255);
+font-size: 1.5rem;
+font-weight: 400;
+text-align: left;
+background: transparent;
+}
+.about-title{
+    color: rgb(255,255,255);
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: transparent;
+    margin-left: 25px;
+    margin-bottom:30px;
+}
+
 @media screen and (max-width:1440px){
     .navbar{
      border: 0.5px solid rgb(254, 163, 1);
@@ -315,6 +448,9 @@ align-items: center;
     align-items: center;
  }
  .slider{
+    display: none;
+ }
+ .highlight-story-card{
     display: none;
  }
 
